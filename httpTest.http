@@ -1,0 +1,38 @@
+GET https://localhost:7014/api/emp HTTP/1.1
+###
+
+GET https://localhost:7014/api/emp/8950 HTTP/1.1
+###
+
+POST https://localhost:7014/api/emp HTTP/1.1
+Content-Type: application/json
+
+{
+    "ename" : "bbbb",
+    "job" : "bbbb",
+    "mgr" : "222",
+    "hiredate" : "2019-07-26T00:00:00",
+    "sal" : "12222",
+    "comm" : "30",
+    "deptno" : "30"
+}
+###
+
+
+DELETE https://localhost:7014/api/emp/8950 HTTP/1.1
+###
+
+
+PUT https://localhost:7014/api/emp/8950 HTTP/1.1
+Content-Type: application/json
+
+{
+    "ename" : "aaaa",
+    "job" : "aaaa",
+    "mgr" : "111",
+    "hiredate" : "2019-08-26T00:00:00",
+    "sal" : "111",
+    "comm" : "10",
+    "deptno" : "10"
+}
+###
